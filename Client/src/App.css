@@ -1,0 +1,554 @@
+#root {
+  max-width: 100%;
+  overflow-x: hidden;
+  
+}
+
+.logo-img {
+  max-height: 100px;
+  margin-right: 100000px;
+}
+.logo-img:hover {
+  filter: drop-shadow(0 0 2em #b9a913aa);
+}
+.logo-imgreact:hover {
+  filter: drop-shadow(0 0 2em #e4ac12aa);
+}
+
+.logo-container {
+  margin-right: 20px;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+
+/*NAVBAR*/ 
+
+
+.header,
+.header .btn-getstarted:focus:hover, 
+.btn-getlogin:focus:hover {
+  color: var(--color-white);
+  background: rgba(var(--color-primary-rgb), 0.85);
+}
+
+.navbar ul {
+  margin-left: 100px;
+  margin-top: -75px;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  z-index: 2000;
+  opacity: 1;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a,
+.navbar a:focus {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba(var(--color-secondary-dark-rgb), 0.7);
+    white-space: nowrap;
+    transition: 0.3s;
+    
+}
+
+.dropdown ul {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    margin: 0;
+    padding: 0 0 10px 0;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    
+}
+
+
+.navbar .dropdown:hover>ul {
+    opacity: 1;
+    visibility: visible;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  
+}
+
+.btn-getstarted, .btn-getlogin {
+  position: fixed; 
+  top: 40px;
+  z-index: 1000;
+}
+
+.btn-getlogin {
+  right: 100px;
+}
+
+.btn-getstarted {
+  right: 200px;
+}
+
+.logoutButton {
+  position: absolute;
+  width: 7%;
+  top: 0;
+  z-index: 1000;
+  right: 0;
+}
+
+ 
+/* Homepage*/
+
+
+#homePageContainer {
+  padding-top: 90px;
+  text-align: center;
+}
+
+#homePageContainer h2, #homePageContainer h4 {
+  color: rgb(233, 184, 165);
+}
+
+#homePageContainer h1 {
+  color: rgb(252, 252, 65);
+}
+
+#page-top-text {
+  color: rgba(177, 177, 165, 0.884);
+
+}
+.btn-primary, .btn-top {
+  color: rgb(247, 244, 244);
+}
+
+.posts-main-page {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+
+#scroll {
+  padding: 50px 120px;
+}
+
+.btn-top {
+  padding-top: 30px;
+}
+
+
+/* Login form */
+
+.btn-success{
+  background-color: green;
+}
+
+h2 {
+  margin-top: 60px
+  
+}
+
+#formContent {
+  background: #ebe5e5;
+  background-image: url(../src/assets/img/lego.png);
+  color: rgb(10, 34, 18);
+  width: 100%;
+  max-width: 450px;
+  position: flex;
+  display: flex;
+  padding: 60px 0px 20px 4px;
+  -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  text-align: center;
+  margin-top: 50px;
+  border-radius: 5px;
+  
+}
+
+
+input[type=text] {
+  background-color: #f6f6f6;
+  border: none;
+  color: #1a1919;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px;
+  width: 85%;
+  border: 2px solid #f6f6f6;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+input[type=text]:focus {
+  background-color: #fff;
+  border-bottom: 2px solid #5fbae9;
+}
+
+input[type=text]:placeholder {
+  color: #cccccc;
+}
+
+input[type=password] {
+  background-color: #f6f6f6;
+  border: none;
+  color: #0d0d0d;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px;
+  width: 85%;
+  border: 2px solid #f6f6f6;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+input[type=password]:focus {
+  background-color: #fff;
+  border-bottom: 2px solid #5fbae9;
+}
+
+input[type=password]:placeholder {
+  color: #cccccc;
+}
+
+
+
+/* ANIMATIONS */
+
+/* Simple CSS3 Fade-in-down Animation */
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -100%, 0);;
+    transform: none;
+  }
+}
+
+/* Simple CSS3 Fade-in Animation */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fadeIn {
+  opacity:0;
+  -webkit-animation:fadeIn ease-in 1;
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.fadeIn.first {
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fadeIn.second {
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.fadeIn.third {
+  -webkit-animation-delay: 0.8s;
+  -moz-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+.fadeIn.fourth {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+/* Simple CSS3 Fade-in Animation */
+.underlineHover:after {
+  display: block;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  content: "";
+  transition: width 0.2s;
+}
+
+.underlineHover:hover {
+  color: #0d0d0d;
+}
+
+.underlineHover:hover:after{
+  width: 100%;
+}
+
+#returnMessage{
+  color: rgb(195, 38, 38);
+}
+
+#activeUser{
+    display: none;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+
+/*Create posts */
+
+#postFormContainer {
+  display: flex;
+  transform: translate(-50%, -50%);
+  max-width: 600px;
+  margin: auto;
+  margin-top: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+#postForm {
+  border-radius: 5px;
+  padding: 50px;
+  background-color: antiquewhite;
+  color: rgb(10, 34, 18);
+  width: 100%;
+}
+
+.descriptionInput {
+  height: 200px;
+  font-size: 16px;
+  width: 100%;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/*Content page*/
+
+.posts-mp-container {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.posts-main-container{
+  padding: 0px 100px 100px 100px;
+}
+
+.title-content h3{
+  color: #535bf2;
+}
+
+#main-posts {
+  width: 100%;
+  height: 160px;
+  border: 1px solid rgba(177, 177, 165, 0.884);
+  display: flex;
+}
+
+#left-div{
+  flex: 0 0 20%;
+  padding: 5px;
+}
+
+#left-div img {
+  height: 100%;
+  width: 100%;
+  cursor: zoom-in;
+}
+
+#postitle-div {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  color: rgba(50, 247, 164, 0.918);
+  max-height: 200px;
+  overflow-y: scroll;
+}
+
+#description-div {
+  flex: 2;
+  text-align: center;
+  padding-top: 10px;
+  padding-left: 10px;
+  max-height: 200px; 
+  overflow-y: scroll;
+}
+
+#author-div {
+  flex: 0 0 12%;
+  text-align: center;
+  padding: 10px;
+}
+
+.posts-main-container {
+  margin-top: 200px;
+  position: relative;
+}
+
+.title-content h3 {
+  color: #535bf2;
+}
+
+.centered-image {
+  position: fixed;
+  top: 10%;
+  left: 0%;
+  transform: scale(1);
+  
+}
+
+#buttons_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  margin: 2px;
+}
+
+.editButton, .deleteButton, .saveButton {
+  height: 50px;
+  width: 100%;
+  margin: 2px 2px 2px 0;
+  font-size: 12px;
+  background-color: #535bf2;
+}
+
+.heart::before {
+  content: '\2665'; 
+  color: red;
+  font-size: 30px;
+}
+
+.noheart::before {
+  content: '\2665'; 
+  color: grey;
+  font-size: 30px;
+}
+
+
+.heart, .noheart {
+  width: 40%;
+  padding: 0;
+  background-color: #242424;
+}
+
+/* About us page */
+
+
+.backgroundImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/img/homepageBackground.jpg'); 
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4; 
+  z-index: -1;
+}
+
+.content {
+  z-index: 1; 
+  padding: 20px;
+}
+
+#page-top-image, .content {
+  text-align: center;
+  padding-top: 100px;
+}
+
+#page-top-image {
+  padding-bottom: 100px;
+}
+
+@media (max-width: 768px) {
+  #root {
+    padding: 1rem;
+  }
+
+  .logo {
+    padding: 1em;
+  }
+}
+
